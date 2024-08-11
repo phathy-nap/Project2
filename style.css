@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0FBE2;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Nav bar */
+
+.nav-bar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #BFF6C3;
+    padding: 1em 0em;
+    border-bottom: 2px solid;
+}
+.button{
+    height: 5em;
+    width: 10em;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: #ACE1AF;
+    box-shadow: 2px 2px black;
+    transition: 0.3s;
+}
+
+
+.button:hover{
+    box-shadow: 5px 5px #f67500 !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button:active{
+    opacity: 0.5;
+    transition: 0.15s;
+}
+.button p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 0;
+}
+.body {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+
+/*Home-page */
+
+#home-page .body {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 0;
+}
+.header {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.header span {
+    font-size: 2em;
+    font-weight: 800;
+}
+#home-page .button.home{
+    box-shadow: 3px 3px #f67500;
+}
+
+/* About-page */
+.container.body {
+    flex-direction: column;
+    padding: 1rem;
+
+}
+#about-page .button.about {
+    box-shadow: 3px 3px #f67500;
+}
+.box {
+    width: 45%;
+    border: 2px solid black;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: #ACE1AF;
+    box-shadow: 2px 2px black;
+    padding: 10px;
+    word-wrap: break-word;
+
+}
+.box2{
+    align-self: flex-end;
+    text-align: end;
+}
+
+/* Skill-page  */
+
+#skill-page .button.skill {
+    box-shadow: 3px 3px #f67500;
+}
+
+/* Contact-page */
+#contact-page .button.contact {
+    box-shadow: 3px 3px #f67500;
+}
+
+/* for mobile */
+
+@media (max-width: 700px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .container.body {
+        justify-content: space-evenly;
+        gap: 2em;
+
+    }
+    .box {
+        align-self: center;
+        width: 70%;
+        text-align: center;
+    }
+
+}
